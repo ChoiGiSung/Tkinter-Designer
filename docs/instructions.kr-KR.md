@@ -167,55 +167,54 @@ ___
 
 <br><br>
 
-8. **Rounded Button**
+8. **둥근 Button**
    - Add rectangle to serve as a button in your GUI
      - Optional: Add text for the button
    - Make it rounded by adding corner radius by selecting the rectangle and adding corner radius from the right side. [Read more on it](https://help.figma.com/hc/en-us/articles/360050986854-Adjust-corner-radius-and-smoothing)
-   - Create a Rectangle with same size of your button. Don't make it rounded.
-   - Change the Rectangle's color to match the Background
-   - Now move the newly created rectangle below the main button(Rectangle).
-   - Select the button, Rectangle, and any optional text, then group them with <kbd>CTRL/&#8984; + G</kbd>
-   - Name the group "Button"
+   - button과 크기가 같은 Rectangle을 만듭니다. 동그랗게 만들지 마세요.
+   - 배경과 일치하도록 Rectangle 색상 변경
+   - 이제 새로 만든 Rectangle을 기본 button(Rectangle) 아래로 이동합니다.
+   - button, Rectangle및 optional text를 선택한 다음 <kbd>로 그룹화합니다CTRL/&#8984; + G</kbd>
+   - 그룹 이름을 "Button"으로 지정합니다
 
-#### Refer to [this video](https://youtu.be/Qd-jJjduWeQ) if you face any problem
+#### 문제가 발생하면 [유튜브](https://youtu.be/Qd-jJjduWeQ) 를 참조하십시오
 
 <br><br>
 
 <a id="Using-Tkinter-Designer"></a>
 
-# Using Tkinter Designer <small>[[Top](#table-of-contents)]</small>
+# Tkinter Designer 사용 <small>[[Top](#table-of-contents)]</small>
 
-## Required Inputs
+## 필수 입력 정보
 
-There are some inputs you'll need to collect to be able to use the TKinter Designer.
+TKinter Designer를 사용하려면 몇 가지 입력 정보를 수집해야 합니다.
 
 <a id="using-1"></a>
 
-### 1. Personal Access Token
+### 1. 개인 액세스 토큰
 
-1. Log into your Figma account
-2. Navigate to Settings
-3. In the **Account** tab, scroll down to **Personal access tokens**
-4. Enter the name of your access token in the entry form and press <kbd>Enter</kbd>
-5. Your personal access token will be created.
-   - Copy this token and keep it somewhere safe.
-   - **You will not get another chance to copy this token.**
+1. Figma 계정에 로그인합니다
+2. 설정으로 이동
+3. **Account** 탭에서 **Personal access tokens**으로 스크롤합니다
+4. 입력 양식에 액세스 토큰 이름을 입력하고 <kbd>Enter</kbd> 키를 누릅니다
+5. 개인 액세스 토큰이 생성됩니다.
+   - 이 토큰을 복사하여 안전한 곳에 보관하십시오.
+   - **이 토큰을 다시 복사할 수 없습니다.**
 
 <a id="using-2"></a>
 
-### 2. Getting your File URL
+### 2. File URL 얻기
 
-1. In your Figma design file, click the **Share** button in the top bar, then click on **&#x1f517; Copy link**
-
+1. Figma 디자인 파일에서 상단 바의 **Share** 버튼을 클릭한 다음 **&#x1f517; Copy link**를 클릭합니다.
 <a id="using-cli"></a>
 
-## Using the CLI
+## CLI로 실행하기
 
-Using the CLI is as simple as installing the package and running the CLI tool.
+CLI를 사용하는 것은 패키지를 설치하고 CLI 도구를 실행하는 것만큼 간단합니다.
 
-### From PyPi
+### PyPi로 실행하기
 
-You can use the below command as test by replacing $FILE_URL & $FIGMA_TOKEN by your data. If you haven't got the token and link then refer to [**Required Inputs Section**](#using-1).
+$FILE_URL & $FIGMA_TOKEN을 데이터로 대체하여 아래 명령을 테스트로 사용할 수 있습니다. 토큰과 링크가 없으면 [**필수 입력 정보 Section**](#using-1)을 참조하십시오.
 
 ``` bash
 pip install tkdesigner
@@ -223,11 +222,11 @@ pip install tkdesigner
 tkdesigner $FILE_URL $FIGMA_TOKEN
 ```
 
-### From Source
+### 소스로 실행하기
 
-To use CLI from the source code you need to clone the repository and then follow the below instructions.
+소스 코드에서 CLI를 사용하려면 리포지토리를 복제한 다음 아래 지침을 따라야 합니다.
 
-You can use the below command as test by replacing $FILE_URL & $FIGMA_TOKEN by your data. If you haven't got the token and link then refer to [**Required Inputs Section**](#using-1).
+$FILE_URL & $FIGMA_TOKEN을 데이터로 대체하여 아래 명령을 테스트로 사용할 수 있습니다. 토큰과 링크가 없으면 [**필수 입력 정보 Section**](#using-1)을 참조하십시오.
 
 ```bash
 $ python -m tkdesigner.cli $FILE_URL $FIGMA_TOKEN
@@ -236,11 +235,11 @@ $ python -m tkdesigner.cli $FILE_URL $FIGMA_TOKEN
 $ python -m tkdesigner --help
 ```
 
-### Output
+### 결과물
 
-By default, the GUI code will be written to build/gui.py. You can specify the output path by using `-o` Flag and providing the path.
+기본적으로 GUI 코드는 build/gui.py 에 기록됩니다. '-o' 플래그를 사용하고 경로를 제공하여 출력 경로를 지정할 수 있습니다.
 
-To run the generated GUI, cd into the directory you built it to (e.g. build/) and run it just as you would any Tkinter GUI.
+생성된 GUI를 실행하려면 빌드한 디렉토리(예: build/)에 들어가 Tkinter GUI와 마찬가지로 실행합니다.
 
 ```bash
 cd build
@@ -249,13 +248,13 @@ python3 gui.py
 
 <a id="using-gui"></a>
 
-## Using the GUI
+## GUI로 실행하기
 
-### Open Tkinter Designer before doing the following steps
+### 다음 단계를 수행하기 전에 Tkinter Designer 실행시키기
 
 <br>
 
-1. Open TKinter Designer GUI by
+1. 다음 명령어를 통해 TKinter Designer GUI를 실행합니다.
 
 ```
 cd Tkinter-Designer
@@ -263,37 +262,37 @@ cd gui
 python3 gui.py
 ```
 
-2. Paste your *personal access token* into the **Token ID** form in Tkinter Designer
-3. Paste the link into the **File URL** form in Tkinter Designer
-4. Click the **Output Path** form to open a file browser
-5. Choose an output path and click **Select Folder**
-6. Press **Generate**
+2. Tkinter Designer의 **Token ID**에 *personal access token*를 추가합니다.
+3. Tkinter Designer의 **File URL**에 Figma링크를 추가합니다. 
+4. **Output Path** 를 통해 저장될 위치를 누릅니다.
+5. 생성 경로를 선택하고 다음을 누릅니다. **Select Folder**
+6. **Generate**를 누릅니다.
 
-The output files from Tkinter Designer will be placed in your chosen directory, inside a new folder called **build**. Congratulations, you have now created your Tkinter GUI using Tkinter Designer!
+Tkinter Designer의 출력 파일은 선택한 디렉토리의 **build**라는 새 폴더 안에 배치됩니다. 축하합니다. 이제 Tkinter Designer를 사용하여 Tkinter GUI를 만들었습니다!
 
 <br><br>
 
 <a id="Troubleshooting"></a>
 
-# Troubleshooting <small>[[Top](#table-of-contents)]</small>
+# 문제해결 <small>[[Top](#table-of-contents)]</small>
 
-- Elements not visible? Misplaced?
-  - Please make sure that your Figma File has its elements named correctly. * See [Formatting Your Figma Design, &sect;1](#formatting-1)
+- 요소가 보이지 않습니까?
+  - Figma 파일의 요소 이름이 올바른지 확인하십시오 * See [Figma 가이드, &sect;1](#formatting-1)
 
-- Button has an unintended gray background?
-  - Make sure you have added a Rectangle behind your button element, and that its Fill color is the same as the Background's
+- 버튼에 의도하지 않은 회색 배경이 있습니까?
+  - 버튼 요소 뒤에 직사각형을 추가했는지 확인하고 채우기 색이 배경의 색과 동일한지 확인합니다.
 
-- Incorrect elements?
-  - Make sure you have named your elements correctly in Figma
-    - See [Formatting Your Figma Design, &sect;1](#formatting-1)
+- 잘못된 요소?
+  - Figma에서 요소의 이름을 올바르게 지정했는지 확인합니다.
+    - See [Figma 가이드, &sect;1](#formatting-1)
 
-- Window is larger than the screen?
-  - Reduce the size of your elements in Figma
+- 창이 화면보다 큽니까?
+  - Figma에서 요소의 크기를 줄이세요.
 
-- Files not generating?
-  - Restart Tkinter Designer
-  - Double-check the token and URL
-  - Make sure your design has a Frame
+- 파일이 생성되지 않습니까?
+  - Tkinter Designer 다시 시작합니다.
+  - 토큰과 URL을 더블체크합니다.
+  - 디자인에 프레임이 있는지 확인합니다.
 
-- Something else?
+- 다른 무언가?
   - [Report issues not listed here on GitHub](https://github.com/ParthJadhav/Tkinter-Designer/issues/new)
