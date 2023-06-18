@@ -1,114 +1,106 @@
-# How to use Tkinter Designer
+# Tkinter Designer 사용법
 
-#### Translations
-
-- [简体中文](/docs/instructions.zh-CN.md)
-- [Français](/docs/instructions.fr-FR.md)
-- [ગુજરાતી](docs/instructions.gu-GU.md)
-- [عربية](/docs/instructions.ar-DZ.md)
-- [Turkish](/docs/instructions.tr-TR.md)
-- [Korean](/docs/instructions.kr-KR.md)
 ___
 
-## Table of Contents
+## 목차
 
-1. [**Getting Started**](#getting-started-1)
-   1. [Install Python](#getting-started-1)
-   2. [Install Tkinter Designer](#getting-started-2)
-   3. [Make a Figma Account](#getting-started-3)
+1. [**시작하기**](#getting-started-1)
+   1. [Python 설치하기](#getting-started-1)
+   2. [Tkinter Designer 설치하기](#getting-started-2)
+   3. [Figma 계정 생성하기](#getting-started-3)
 
-2. [**Formatting Your Figma Design**](#formatting-1)
-   1. [Reference](#formatting-1)
-   2. [Element Guide](#formatting-2)
+2. [**Figma 가이드**](#formatting-1)
+   1. [레퍼런스](#formatting-1)
+   2. [속성 가이드](#formatting-2)
 
-3. [**Using Tkinter Designer**](#Using-Tkinter-Designer)
-   1. [Personal Access Token](#using-1)
-   2. [Getting your File URL](#using-2)
-   3. [Using The CLI](#using-cli)
-   4. [Using The GUI](#using-gui)
+3. [**Tkinter Designer 사용하기**](#Using-Tkinter-Designer)
+   1. [Access Token](#using-1)
+   2. [File URL 가져오기](#using-2)
+   3. [CLI 사용하기](#using-cli)
+   4. [GUI 사용하기](#using-gui)
 
-4. [**Troubleshooting**](#Troubleshooting)
+4. [**문제해결**](#Troubleshooting)
 
 <br><br>
 
-# Getting Started <small>[[Top](#table-of-contents)]</small>
+# 시작하기 <small>[[Top](#table-of-contents)]</small>
 
 <a id="getting-started-1"></a>
 
-## 1. Install Python
+## 1. Python 설치하기
 
-Before using Tkinter Designer, you'll need to install Python.  
-- [Here is a link to the Python downloads page.](https://www.python.org/downloads)  
-- [Here is a helpful guide to installing Python on various operating systems.](https://wiki.python.org/moin/BeginnersGuide/Download)
+Tkinter Designer를 사용하기 전에 Python을 설치해야 합니다.  
+- [여기에서 Python을 설치할 수 있습니다.](https://www.python.org/downloads)  
+- [다음은 다양한 운영 체제에 Python을 설치하는 데 유용한 가이드입니다.](https://wiki.python.org/moin/BeginnersGuide/Download)
 
-*Later in this guide, you will use the Package Installer for Python (pip), which may require you to add Python to your system PATH.*
+*이 가이드의 뒷부분에서 Python용 Package Installer(pip)를 사용할 것이며, 이 경우 시스템 환경변수에 Python을 추가해야 할 수도 있습니다.*
 
 ___
 <br>
 
 <a id="getting-started-2"></a>
 
-## 2. Install Tkinter Designer
+## 2. Tkinter Designer 설치하기
 
-*Three options:*
+*세 가지 옵션:*
 
 1. `pip install tkdesigner`
 
-2. Install [poetry](https:python-poetry.org)
+2. [poetry](https:python-poetry.org) 설치
    - `poetry new <gui_project_name> && cd <gui_project_name>`
    - `poetry add tkdesigner`
    - `poetry install`
 
-3. To run Tkinter Designer from the source code, follow the instructions below.
+3. 소스 코드에서 Tkinter Designer를 실행하려면 아래 지침을 따르십시오.
 
-   1. Download the source files for Tkinter Designer by downloading it manually or using GIT.
+   1. Tkinter Designer의 원본 파일을 수동으로 다운로드하거나 GIT를 사용하여 다운로드합니다.
 
       ` git clone https://github.com/ParthJadhav/Tkinter-Designer.git `
 
-   2. Change your working directory to Tkinter Designer.
+   2. 작업 디렉토리를 Tkinter Designer로 변경합니다.
 
       `cd Tkinter-Designer`
 
-   3. Install the necessary dependencies by running
+   3. 다음을 실행하여 필요한 종속성을 설치합니다.
 
       - `pip install -r requirements.txt`
-         - In the event that pip doesn't work, also try the following commands:
+         - pip이 작동하지 않는 경우 다음 명령도 사용해 보십시오:
          - `pip3 install -r requirements.txt`
          - `python -m pip install -r requirements.txt`
          - `python3 -m pip install -r requirements.txt`
-         - If this still doesn't work, ensure that Python is added to the PATH.
+         - 그래도 작동하지 않으면 환경변수에 Python이 추가되었는지 확인합니다.
 
-   This will install all requirements and Tkinter Designer. Before you use Tkinter Designer you need to create a Figma File with the below instructions.
+   그러면 모든 요구 사항과 Tkinter Designer가 설치됩니다. Tkinter Designer를 사용하기 전에 아래 지침을 사용하여 Figma 파일을 만들어야 합니다.
 
-   If you already have created a file then skip to [**Using Tkinter Designer**](#Using-Tkinter-Designer) Section.
+   파일을 이미 만든 경우 [**TkinterDesigner 사용하기**](#Using-Tkinter-Designer) 섹션으로 건너뜁니다.
 
 ___
 <br>
 
 <a id="getting-started-3"></a>
 
-## 3. Make a Figma Account
+## 3. Figma 계정 생성하기
 
-1. In a web browser, navigate to [figma.com](https://www.figma.com/) and click 'Sign up'
-2. Enter your information, then verify your email
-3. Create a new Figma Design file
-4. Get started making your GUI
-   - The next section covers required formatting for Tkinter Designer input.
-     - [Here is the official Figma tutorial series for beginners.](https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4)
-     - [Here is the official Figma YouTube channel.](https://www.youtube.com/c/Figmadesign/featured)
-     - [Here is the Figma Help Center.](https://help.figma.com/hc/en-us)
+1. 웹 브라우저에서 [figma.com ](https://www.figma.com/) )로 이동하여 '가입'을 클릭합니다.
+2. 정보를 입력한 다음 이메일 인증을 합니다.
+3. 새로운 Figma 파일을 만듭니다.
+4. GUI 제작 시작
+   - 다음 섹션에서는 Tkinter Designer 입력에 필요한 형식에 대해 설명합니다.
+     - [초보자를 위한 공식 피그마 튜토리얼 시리즈입니다.](https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4)
+     - [피그마 공식 유튜브 채널입니다.](https://www.youtube.com/c/Figmadesign/featured)
+     - [여기가 피그마 도움말입니다.](https://help.figma.com/hc/en-us)
 
 <br><br>
 
 <a id="formatting-1"></a>
 
-# Formatting Your Figma Design <small>[[Top](#table-of-contents)]</small>
+# Figma 가이드 <small>[[Top](#table-of-contents)]</small>
 
-## 1. Reference
+## 1. 레퍼런스
 
 <br>
 
-### Naming is Important
+### Naming이 중요합니다
 
 | Figma Element Name | Tkinter Element |
 | --- | --- |
@@ -122,30 +114,30 @@ ___
 
 <br>
 
-The code generated by Tkinter Designer is based on the names of elements from your Figma design and, as such, you need to name your elements accordingly. In Figma, rename your elements by double-clicking them in the Layers panel.
+Tkinter Designer에서 생성된 코드는 Figma 설계의 요소 이름을 기반으로 하므로 요소 이름을 적절하게 지정해야 합니다. 피그마의 레이어 패널에서 요소를 두 번 클릭하여 이름을 바꿉니다.
 
 ___
 <br>
 
 <a id="formatting-2"></a>
 
-## 2. Element Guide
+## 2. 속성 가이드
 
 <br>
 
-1. **First, create a Frame that will serve as your Tkinter Window.**
+1. **먼저 Tkinter 창 역할을 할 프레임을 만듭니다.**
 <br><br>
 
-2. **Adding Images**
-   - Images can be created using shapes and/or images
-   - If you use multiple shapes/images, you must group them together by selecting them all and pressing <kbd>CTRL/&#8984; + G</kbd>
-   - After that name the element or group as "Image".
+2. **Image**
+   - 도형 및/또는 이미지를 사용하여 이미지를 생성할 수 있습니다.
+   - 여러 도형/이미지를 사용하는 경우 '모두 선택'을 눌러 그룹화해야 합니다 <kbd>CTRL/&#8984; + G</kbd>
+   - 그런 다음 요소 또는 그룹의 이름을 "이미지"로 지정합니다.
 <br><br>
 
-3. **Text (Normal Text)**
-   - Use the <kbd>T</kbd> key to activate the text tool, then add text as desired
-   - Text does not have to be renamed for use in Tkinter Designer
-   - Explicitly press the <kbd>Return</kbd>  Or  <kbd>Enter</kbd> Key to move to the next line.
+3. **Text (일반 텍스트)**
+   - <kbd>T</kbd> 키를 눌러 텍스트 도구를 활성화한 다음 원하는 대로 텍스트 추가합니다.
+   - Tkinter Designer에서 사용하기 위해 텍스트 이름을 변경할 필요가 없습니다.
+   - 명시적으로 <kbd>Return</kbd> 또는 <kbd>Enter</kbd> 키를 눌러 다음 줄로 이동합니다.
 <br><br>
 
 4. **Entry (Single-Line User Input)**
