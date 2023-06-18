@@ -20,7 +20,7 @@ ___
 
 ## 💡 소개
 
-Tkinter Designer는 Python에서 GUI 개발 프로세스를 가속화하기 위해 만들어졌습니다. 잘 알려진 디자인 소프트웨어 [Figma](https://www.figma.com/) 를 사용하여 Python에서 아름다운 Tkinter GUI를 만드는 것을 식은 죽 먹기 🍰로 만들었습니다
+Tkinter Designer는 Python에서 GUI 개발 프로세스를 가속화하기 위해 만들어졌습니다. 잘 알려진 디자인 소프트웨어 [Figma](https://www.figma.com/) 를 사용하여 Python에서 아름다운 Tkinter GUI를 만드는 것을 식은 죽 먹기 🍰로 만들었습니다.
 
 Tkinter Designer는 Figma API를 사용하여 설계 파일을 분석하고 GUI에 필요한 코드와 파일을 만듭니다. 심지어 Tkinter Designer의 GUI도 Tkinter Designer를 사용하여 만듭니다.
 
@@ -33,7 +33,7 @@ Tkinter Designer는 Figma API를 사용하여 설계 파일을 분석하고 GUI�
 
 [Discord](https://discord.gg/QfE5jMXxJv) 에서 커뮤니티와 자유롭게 창작물을 공유할 수 있습니다.
 
-버그가 발생하거나 제안사항이 있을 경우 이슈 [here](https://github.com/ParthJadhav/Tkinter-Designer) )를 생성해주시기 바랍니다.
+버그가 발생하거나 제안사항이 있을 경우 이슈 [here](https://github.com/ParthJadhav/Tkinter-Designer)를 생성해주시기 바랍니다.
 ## ☄️  Tkinter Designer의 장점
 
 1. 드래그 앤 드롭 인터페이스입니다.
@@ -118,9 +118,9 @@ Tkinter Designer는 BSD 3-clause "New" 또는 "Reved" 라이센스에 따라 라
 | 권한 | 제한사항 | 조건
 | --- | --- | ---
 &check; 상업적 용도 | &times; 책임 | &#x1f6c8; 라이센스 및 저작권 고지
-&check; 수정   | &times; 정당한 이유
-&check; 분배  
-&check; 개인 사용
+&check; 수정   | &times; 정당한 이유| 
+&check; 분배  |
+&check; 개인 사용 | 
 
 ## 컨트리뷰트
 
