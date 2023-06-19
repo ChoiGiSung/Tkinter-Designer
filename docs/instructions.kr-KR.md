@@ -141,36 +141,36 @@ ___
 <br><br>
 
 4. **Entry (Single-Line User Input)**
-   - Activate the Rectangle tool with <kbd>R</kbd>
-   - Adjust the Rectangle to your liking
-   - Make sure the Rectangle is named "TextBox"
+   - <kbd>R</kbd>을 사용하여 Rectangle 도구 활성화
+   - 원하는 대로 Rectangle 조정
+   - Rectangle의 이름이 "extBox"인지 확인합니다
 <br><br>
 
-5. **Text Area (Multi-Line User Input)**
-   - Activate the Rectangle tool with <kbd>R</kbd>
-   - Adjust the Rectangle to your liking
-   - Make sure the Rectangle is named "TextArea"
+5. **Text Area (사용자의 여러줄 입력)**
+   - <kbd>R</kbd>을 사용하여 Rectangle 도구 활성화
+   - 원하는 대로 Rectangle 조정
+   - Rectangle의 이름이 "TextArea"인지 확인합니다
 
 6. **Rectangle**
-   - Activate the Rectangle tool with <kbd>R</kbd>
-   - Adjust the Rectangle to your liking
-   - Make sure the Rectangle is named "Rectangle"
+   - <kbd>R</kbd>을 사용하여 Rectangle 도구 활성화
+   - 원하는 대로 Rectangle 조정
+   - Rectangle의 이름이 "Rectangle"인지 확인합니다
 <br><br>
 
 7. **Normal Button**
-   - Add rectangle to serve as a button in your GUI
-     - Optional: Add text for the button
-   - Select the button(Rectangle), and any optional text, then group them with <kbd>CTRL/&#8984; + G</kbd>
-   - Name the group "Button"
+   - GUI에서 button으로 사용할 rectangle 추가
+     - 선택 사항: button에 대한 text  추가
+   - button(Rectangle)과 옵션으로 text를 선택한 다음 <kbd>CTRL/&#8984; + G</kbd>로 그룹화합니다
+   - 그룹 이름을 "Button"으로 지정합니다
 
-#### Refer to [this video](https://youtu.be/Qd-jJjduWeQ) if you face any problem
+#### 문제가 발생하면 [유튜브](https://youtu.be/Qd-jJjduWeQ) 를 참조하십시오
 
 <br><br>
 
 8. **둥근 Button**
-   - Add rectangle to serve as a button in your GUI
-     - Optional: Add text for the button
-   - Make it rounded by adding corner radius by selecting the rectangle and adding corner radius from the right side. [Read more on it](https://help.figma.com/hc/en-us/articles/360050986854-Adjust-corner-radius-and-smoothing)
+   - GUI에서 button으로 사용할 rectangle 추가
+     - 선택 사항: button에 text 추가
+   - rectangle을 선택하고 오른쪽에서 모서리 반지름을 추가하여 모서리 반지름을 반올림합니다. [자세히 읽어보기](https://help.figma.com/hc/en-us/articles/360050986854-Adjust-corner-radius-and-smoothing)
    - button과 크기가 같은 Rectangle을 만듭니다. 동그랗게 만들지 마세요.
    - 배경과 일치하도록 Rectangle 색상 변경
    - 이제 새로 만든 Rectangle을 기본 button(Rectangle) 아래로 이동합니다.
