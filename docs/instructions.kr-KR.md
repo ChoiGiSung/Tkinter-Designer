@@ -140,10 +140,10 @@ ___
    - 명시적으로 <kbd>Return</kbd> 또는 <kbd>Enter</kbd> 키를 눌러 다음 줄로 이동합니다.
 <br><br>
 
-4. **Entry (Single-Line User Input)**
+4. **Entry (사용자의 한 줄 입력)**
    - <kbd>R</kbd>을 사용하여 Rectangle 도구 활성화
    - 원하는 대로 Rectangle 조정
-   - Rectangle의 이름이 "extBox"인지 확인합니다
+   - Rectangle의 이름이 "TextBox"인지 확인합니다
 <br><br>
 
 5. **Text Area (사용자의 여러줄 입력)**
@@ -162,9 +162,6 @@ ___
      - 선택 사항: button에 대한 text  추가
    - button(Rectangle)과 옵션으로 text를 선택한 다음 <kbd>CTRL/&#8984; + G</kbd>로 그룹화합니다
    - 그룹 이름을 "Button"으로 지정합니다
-
-#### 문제가 발생하면 [유튜브](https://youtu.be/Qd-jJjduWeQ) 를 참조하십시오
-
 <br><br>
 
 8. **둥근 Button**
@@ -174,7 +171,7 @@ ___
    - button과 크기가 같은 Rectangle을 만듭니다. 동그랗게 만들지 마세요.
    - 배경과 일치하도록 Rectangle 색상 변경
    - 이제 새로 만든 Rectangle을 기본 button(Rectangle) 아래로 이동합니다.
-   - button, Rectangle및 optional text를 선택한 다음 <kbd>로 그룹화합니다CTRL/&#8984; + G</kbd>
+   - button, Rectangle및 optional text를 선택한 다음 <kbd>CTRL/&#8984; + G</kbd>로 그룹화합니다
    - 그룹 이름을 "Button"으로 지정합니다
 
 #### 문제가 발생하면 [유튜브](https://youtu.be/Qd-jJjduWeQ) 를 참조하십시오
@@ -294,5 +291,5 @@ Tkinter Designer의 출력 파일은 선택한 디렉토리의 **build**라는 �
   - 토큰과 URL을 더블체크합니다.
   - 디자인에 프레임이 있는지 확인합니다.
 
-- 다른 무언가?
+- 다른 문제가 있습?
   - [Report issues not listed here on GitHub](https://github.com/ParthJadhav/Tkinter-Designer/issues/new)
