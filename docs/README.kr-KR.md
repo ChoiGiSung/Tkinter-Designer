@@ -20,7 +20,7 @@ ___
 
 ## 💡 소개
 
-Tkinter Designer는 Python에서 GUI 개발 프로세스를 가속화하기 위해 만들어졌습니다. 잘 알려진 디자인 소프트웨어 [Figma](https://www.figma.com/) 를 사용하여 Python에서 아름다운 Tkinter GUI를 만드는 것을 식은 죽 먹기 🍰로 만들었습니다.
+Tkinter Designer는 Python에서 GUI 개발 프로세스를 가속화하기 위해 만들어졌습니다. 잘 알려진 디자인 소프트웨어 [Figma](https://www.figma.com/) 를 사용하여 Python에서 아름다운 Tkinter GUI를 만드는 것을 식은 죽 먹기 🥣로 만들었습니다.
 
 Tkinter Designer는 Figma API를 사용하여 설계 파일을 분석하고 GUI에 필요한 코드와 파일을 만듭니다. 심지어 Tkinter Designer의 GUI도 Tkinter Designer를 사용하여 만듭니다.
 
@@ -65,7 +65,7 @@ Tkinter Designer 프로젝트에서 혜택을 받은 경우 후원을 고려해 
 
 ## 📐 작동 방식
 
-사용자가 해야 할 일은 피그마와 인터페이스를 설계한 다음 피그마 파일 URL과 API 토큰을 Tkinter Designer에 붙여넣기만 하면 됩니다.
+사용자가 해야 할 일은 Figma와 인터페이스를 설계한 다음 Figma 파일 URL과 API 토큰을 Tkinter Designer에 붙여넣기만 하면 됩니다.
 
 Tkinter Designer는 Tkinter에서 GUI를 만드는 데 필요한 모든 코드와 이미지를 자동으로 생성합니다.
 
