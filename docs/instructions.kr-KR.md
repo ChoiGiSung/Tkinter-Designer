@@ -81,7 +81,7 @@ ___
 
 ## 3. Figma 계정 생성하기
 
-1. 웹 브라우저에서 [figma.com ](https://www.figma.com/) )로 이동하여 '가입'을 클릭합니다.
+1. 웹 브라우저에서 [figma.com ](https://www.figma.com/)로 이동하여 '가입'을 클릭합니다.
 2. 정보를 입력한 다음 이메일 인증을 합니다.
 3. 새로운 Figma 파일을 만듭니다.
 4. GUI 제작 시작
@@ -114,7 +114,7 @@ ___
 
 <br>
 
-Tkinter Designer에서 생성된 코드는 Figma 설계의 요소 이름을 기반으로 하므로 요소 이름을 적절하게 지정해야 합니다. 피그마의 레이어 패널에서 요소를 두 번 클릭하여 이름을 바꿉니다.
+Tkinter Designer에서 생성된 코드는 Figma 설계의 요소 이름을 기반으로 하므로 요소 이름을 적절하게 지정해야 합니다. Figma의 레이어 패널에서 요소를 두 번 클릭하여 이름을 바꿉니다.
 
 ___
 <br>
@@ -183,7 +183,7 @@ ___
 
 <a id="Using-Tkinter-Designer"></a>
 
-# Tkinter Designer 사용 <small>[[Top](#table-of-contents)]</small>
+# Tkinter Designer 사용하기 <small>[[Top](#table-of-contents)]</small>
 
 ## 필수 입력 정보
 
