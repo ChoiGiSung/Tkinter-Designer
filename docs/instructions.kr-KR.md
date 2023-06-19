@@ -94,7 +94,7 @@ ___
 
 <a id="formatting-1"></a>
 
-# Figma 가이드 <small>[[Top](#table-of-contents)]</small>
+# Figma 가이드 <small>[[Top](#목차)]</small>
 
 ## 1. 레퍼런스
 
@@ -180,7 +180,7 @@ ___
 
 <a id="Using-Tkinter-Designer"></a>
 
-# Tkinter Designer 사용하기 <small>[[Top](#table-of-contents)]</small>
+# Tkinter Designer 사용하기 <small>[[Top](#목차)]</small>
 
 ## 필수 입력 정보
 
@@ -211,7 +211,7 @@ CLI를 사용하는 것은 패키지를 설치하고 CLI 도구를 실행하는 
 
 ### PyPi로 실행하기
 
-$FILE_URL & $FIGMA_TOKEN을 데이터로 대체하여 아래 명령을 테스트로 사용할 수 있습니다. 토큰과 링크가 없으면 [**필수 입력 정보 Section**](#using-1)을 참조하십시오.
+$FILE_URL & $FIGMA_TOKEN을 데이터로 대체하여 아래 명령을 테스트로 사용할 수 있습니다. 토큰과 링크가 없으면 [**필수 입력 정보 Section**](#필수 입력 정보)을 참조하십시오.
 
 ``` bash
 pip install tkdesigner
@@ -223,7 +223,7 @@ tkdesigner $FILE_URL $FIGMA_TOKEN
 
 소스 코드에서 CLI를 사용하려면 리포지토리를 복제한 다음 아래 지침을 따라야 합니다.
 
-$FILE_URL & $FIGMA_TOKEN을 데이터로 대체하여 아래 명령을 테스트로 사용할 수 있습니다. 토큰과 링크가 없으면 [**필수 입력 정보 Section**](#using-1)을 참조하십시오.
+$FILE_URL & $FIGMA_TOKEN을 데이터로 대체하여 아래 명령을 테스트로 사용할 수 있습니다. 토큰과 링크가 없으면 [**필수 입력 정보 Section**](#필수 입력 정보)을 참조하십시오.
 
 ```bash
 $ python -m tkdesigner.cli $FILE_URL $FIGMA_TOKEN
@@ -271,7 +271,7 @@ Tkinter Designer의 출력 파일은 선택한 디렉토리의 **build**라는 �
 
 <a id="Troubleshooting"></a>
 
-# 문제해결 <small>[[Top](#table-of-contents)]</small>
+# 문제해결 <small>[[Top](#목차)]</small>
 
 - 요소가 보이지 않습니까?
   - Figma 파일의 요소 이름이 올바른지 확인하십시오 * See [Figma 가이드, &sect;1](#formatting-1)
@@ -281,7 +281,7 @@ Tkinter Designer의 출력 파일은 선택한 디렉토리의 **build**라는 �
 
 - 잘못된 요소?
   - Figma에서 요소의 이름을 올바르게 지정했는지 확인합니다.
-    - See [Figma 가이드, &sect;1](#formatting-1)
+    - See [Figma 가이드, &sect;1](#Figma 가이드)
 
 - 창이 화면보다 큽니까?
   - Figma에서 요소의 크기를 줄이세요.
@@ -291,5 +291,5 @@ Tkinter Designer의 출력 파일은 선택한 디렉토리의 **build**라는 �
   - 토큰과 URL을 더블체크합니다.
   - 디자인에 프레임이 있는지 확인합니다.
 
-- 다른 문제가 있습?
+- 다른 문제가 있습니까?
   - [Report issues not listed here on GitHub](https://github.com/ParthJadhav/Tkinter-Designer/issues/new)
